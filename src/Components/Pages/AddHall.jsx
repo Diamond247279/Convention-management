@@ -3,41 +3,59 @@ import './style.css';
 import { Link } from 'react-router-dom';
 const AddHall = () => {
     return (
-        <div className="wrapper">
-            <div className="sidebar">
-                <h3>Task</h3>
-                <ul>
-                    <li><a href="#">List of Halls</a></li>
+        <div class="container">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Task</h3>
+          <ul>
+                    
+                 <Link to="/add-hall" className="link"><li>List of Halls</li></Link>   
+                 
+                    
                     
                 </ul>
-                <h3>Setup</h3>
-                <ul>
-                    <li><a href="#">Add Delegate BioData</a></li>
-                   <Link to="/add-room" className="link"> <li>Add Room</li> </Link>
-                    <li><a href="#">Register Delegate</a></li>
+          <h3 class="title">Setup</h3>
+          <ul>
+                    
+                 <Link to="#" className="link"><li>Add Deligate Biodata</li></Link>   
+                 <Link to="/add-room" className="link"><li>Add New Room</li></Link>   
+                 <Link to="/" className="link"><li>Register Deligate</li></Link>   
+                    
                     
                 </ul>
-            </div>
-            <div className="form-container">
-                <form action="">
-                    <h1>Add New Hall</h1>
-                    <div className="input-box">
-                        <select required>
-                            <option value="" disabled selected>Known Halls</option>
-                            <option value="hall1">Hall 1</option>
-                            <option value="hall2">Hall 2</option>
-                            <option value="hall3">Hall 3</option>
+                 </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form method="POST" action="">
+            <h3 class="title">Add Hall</h3>
+            <div class="input-container">
+            <select type="text" name="name" class="input" required>
+                            <option value="" disabled selected class="select-items">Known Halls</option>
+                            <option value="hall 1" class="select-items">hall 1</option>
+                            <option value="hall 2" class="select-items">hall 2</option>
+                            <option value="hall 3" class="select-items">hall 3</option>
                             
-                        </select>
-                    </div>
-                    <div className="input-box">
-                        <input type="text" placeholder="Hall Name" required />
-                    </div>
-                    <button type="submit">Save</button>
-                    <button type="button" name="delete">Delete</button>
-                </form>
+                        </select>               
+              
             </div>
+            <div class="input-container">
+              <input type="tel"  class="input" placeholder="Hall Name"/>
+              
+              
+            </div>
+
+           
+            <input type="submit" value="Save" class="btn" />
+            <input type="submit" value="Delete" class="btn" />
+          </form>
         </div>
+      </div>
+    </div>
+
     );
 };
 
