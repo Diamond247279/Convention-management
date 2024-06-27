@@ -10,6 +10,9 @@ import Batch from './Components/Pages/batch';
 import Swap from './Components/Pages/swap';
 import Register from './Components/Pages/register';
 import RegisterDirect from './Components/Pages/directregistration';
+import ListHall from './Components/Pages/listhall';
+import ListChurch from './Components/Pages/listchurch';
+import ListConvention from './Components/Pages/listconvention';
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/batch" element={<Batch/>} />
           <Route path="/swap" element={<Swap/>} />
           <Route path="/register" element={<RegisterDirect/>} />
+          <Route path="/list-hall" element={<ListHall/>} />
+          <Route path="/list-church" element={<ListChurch/>} />
+          <Route path="/list-convention" element={<ListConvention/>} />
 
           
         </Routes>

@@ -10,7 +10,7 @@ const NewChurch = () => {
           <h3 class="title">Task</h3>
           <ul>
                     
-                 <Link to="/add-hall" className="link"><li>List of Known Churches</li></Link>   
+                 <Link to="/list-church" className="link"><li>List of Known Churches</li></Link>   
                  
                     
                     
@@ -18,7 +18,7 @@ const NewChurch = () => {
           <h3 class="title">Setup</h3>
           <ul>
                     
-                 <Link to="#" className="link"><li>Add Deligate Biodata</li></Link>   
+                 <Link to="/" className="link"><li>Add Deligate Biodata</li></Link>   
                  <Link to="/" className="link"><li>Register Deligate</li></Link>   
                     
                     

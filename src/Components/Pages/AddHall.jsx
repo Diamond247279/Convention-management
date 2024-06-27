@@ -10,7 +10,7 @@ const AddHall = () => {
           <h3 class="title">Task</h3>
           <ul>
                     
-                 <Link to="/add-hall" className="link"><li>List of Halls</li></Link>   
+                 <Link to="/list-hall" className="link"><li>List of Halls</li></Link>   
                  
                     
                     

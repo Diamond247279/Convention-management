@@ -10,7 +10,7 @@ const NewConvention = () => {
           <h3 class="title">Task</h3>
           <ul>
                     
-                 <Link to="/add-hall" className="link"><li>List Convention</li></Link>   
+                 <Link to="/list-convention" className="link"><li>List Convention</li></Link>   
                  
                     
                     
@@ -18,7 +18,7 @@ const NewConvention = () => {
           <h3 class="title">Setup</h3>
           <ul>
                     
-                 <Link to="add-hall" className="link"><li>Add More Halls </li></Link>   
+                 <Link to="/add-hall" className="link"><li>Add More Halls </li></Link>   
                  <Link to="/add-room" className="link"><li>Add More Rooms</li></Link>   
                     
                     
